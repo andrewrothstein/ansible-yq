@@ -1,0 +1,57 @@
+---
+# defaults file for yq
+yq_ver: '3.2.1'
+yq_mirror: https://github.com/mikefarah/yq/releases/download
+yq_install_dir: /usr/local/bin
+yq_privilege_escalate: True
+yq_os: linux
+yq_arch: amd64
+yq_checksums:
+  # https://github.com/mikefarah/yq/releases/download/3.2.1/checksums
+  '3.2.1':
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_darwin_386
+      darwin_386: sha256:92afb526e5a6f8bdbd3a74d3ae8dd1660185a9f9a4a21987b45d9d74a33ec609
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_darwin_amd64
+      darwin_amd64: sha256:116f74a384d0b4fa31a58dd01cfcdeffa6fcd21c066de223cbb0ebc042a8bc28
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_freebsd_386
+      freebsd_386: sha256:cdf59837fcdf4015ebe0b229dcbd40b19557818195ab46d599e535bf41916914
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_freebsd_amd64
+      freebsd_amd64: sha256:41ff84f145a73b1e04e0c1dcc3ecef0c310227105d0ede8bdcc1eedc5646f0c5
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_freebsd_arm
+      freebsd_arm: sha256:9fce5412c1b2f35f1bc8305d0c2ae8b5bf5fcbf85d4407b4bdc261987d1aa2f2
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_386
+      linux_386: sha256:c65c861b6a0fbade0cca17978baa55c0dbfba6e1ba32f4fee7165899152fd869
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_amd64
+      linux_amd64: sha256:11a830ffb72aad0eaa7640ef69637068f36469be4f68a93da822fbe454e998f8
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_arm
+      linux_arm: sha256:9fe3ed853f05b3d7d78ce55a3c354f15fc659a8b902c6650255a6dff8609df67
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_arm64
+      linux_arm64: sha256:fe444a03b8891e8a7e465eb64669660ef2be197520ef8b4f304b043f886ae312
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_mips
+      linux_mips: sha256:ae8bd297d7aba68bea8f32a04348a786d768027473caf6b851dff18052743be2
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_mips64
+      linux_mips64: sha256:1f5e8fd1742a034d4593b17696535dbed04c99f3b3778a642b8f1d677a69e30d
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_mips64le
+      linux_mips64le: sha256:4480b8b6b4176c956fb855ed1d3cb0ddcac145b281428bfba00a9f10e19a9591
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_mipsle
+      linux_mipsle: sha256:32821a1105972c4e28ed823737df57f6e11313b5346dfc49b34d02d238df1580
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_ppc64
+      linux_ppc64: sha256:1e469ab1f1f8aa49e45f85eadbfcb0662f519c90fc82529d1baf64ba1c59a59b
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_ppc64le
+      linux_ppc64le: sha256:5b9aec711a4589bb96721fa96688522a0ae1f5f4547e844585097678ac2e5253
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_linux_s390x
+      linux_s390x: sha256:b1a4140cab5a640c8f4d6fcaa8f669c6c4427d5d738c41a8646002514788e8b6
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_netbsd_386
+      netbsd_386: sha256:2ecbc71f2acf619f0273087f9484ee7b621aa9734f7b967f6c96c1bb8e98f4b0
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_netbsd_amd64
+      netbsd_amd64: sha256:611851acba66009da48a5e0db8a4d12b6eb4148f46951aa5d9969e797d22786c
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_netbsd_arm
+      netbsd_arm: sha256:8a90a2edf0b487cfb7a9fdf5bea10f8f70ccc1cd9a78e16a5332611cc8582ffc
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_openbsd_386
+      openbsd_386: sha256:36109e13ee137023b63a7dbbded346d5255605ebbb5b317f4fcb24453e45c765
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_openbsd_amd64
+      openbsd_amd64: sha256:aae5cde9913f5da6b2b3af9d9eea6c2e587ceacc2165f1f0a2eb596a33c400f2
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_windows_386.exe
+      windows_386: sha256:513314579e6f147e49610e7c4d1e4c00406b499a34527dadc39cb034bb34d98c
+      # https://github.com/mikefarah/yq/releases/download/3.2.1/yq_windows_amd64.exe
+      windows_amd64: sha256:9b3466ff4e37c8a93d7530e3dc7a047314d0897dbfbffb50b82235695e231fff
