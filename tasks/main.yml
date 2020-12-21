@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: download
+- name: downloading {{ yq_url }} to {{ yq_install_exe }}
   become: '{{ yq_privilege_escalate }}'
   become_user: root
   get_url:
@@ -17,7 +17,7 @@
     dest: '{{ yq_install_exe }}'
     checksum: '{{ yq_checksum }}'
     mode: 0755
-- name: link
+- name: linking {{ yq_link }} to {{ yq_install_exe }}
   become: '{{ yq_privilege_escalate }}'
   become_user: root
   file:
