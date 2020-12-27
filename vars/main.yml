@@ -1,7 +1,7 @@
 ---
 # vars file for yq
 yq_platform: '{{ yq_os }}_{{ yq_arch }}'
-yq_url: '{{ yq_mirror }}/{{ yq_ver }}/yq_{{ yq_platform }}'
+yq_url: '{{ yq_mirror }}/v{{ yq_ver }}/yq_{{ yq_platform }}'
 yq_checksum: '{{ yq_checksums[yq_ver][yq_platform] }}'
 yq_install_exe: '{{ yq_install_dir }}/yq_{{ yq_ver }}_{{ yq_platform }}'
 yq_link: '{{ yq_install_dir }}/yq'

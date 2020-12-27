@@ -11,7 +11,7 @@ dl() {
     local dotexe=${4:-}
     local platform="${os}_${arch}"
     local rfile="${app}_${platform}${dotexe}"
-    local url=$MIRROR/$ver/$rfile
+    local url=$MIRROR/v$ver/$rfile
     printf "      # %s\n" $url
     printf "      %s: md5:%s\n" $platform $(grep -e "^$rfile " $lchecksums | awk '{print $4}')
 }
@@ -19,7 +19,7 @@ dl() {
 dl_ver() {
     local ver=$1
     local app=yq
-    local url=$MIRROR/$ver/checksums
+    local url=$MIRROR/v$ver/checksums
 
     local lchecksums=$DIR/${app}-${ver}-checksums
     if [ ! -e $lchecksums ];
@@ -54,4 +54,4 @@ dl_ver() {
     dl $ver windows amd64 .exe
 }
 
-dl_ver ${1:-4.0.0}
+dl_ver ${1:-4.1.0}
