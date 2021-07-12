@@ -1,6 +1,6 @@
 andrewrothstein.yq
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-yq.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-yq)
+![Build Status](https://github.com/andrewrothstein/ansible-yq/actions/workflows/build.yml/badge.svg)
 
 Installs [yq](https://mikefarah.gitbook.io/yq/).
 
