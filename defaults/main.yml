@@ -1,6 +1,6 @@
 ---
 # defaults file for yq
-yq_ver: 4.9.3
+yq_ver: 4.9.7
 yq_mirror: https://github.com/mikefarah/yq/releases/download
 yq_install_dir: /usr/local/bin
 yq_privilege_escalate: True
@@ -743,3 +743,49 @@ yq_checksums:
       windows_386: md5:a1a214b7151e27bff9bdd87dcabfea73
       # https://github.com/mikefarah/yq/releases/download/v4.9.3/yq_windows_amd64.exe
       windows_amd64: md5:aa3d6a20455a32c7d760b50cf24ab3fe
+  # https://github.com/mikefarah/yq/releases/download/v4.9.7/checksums
+  '4.9.7':
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_darwin_amd64
+      darwin_amd64: md5:395c09e5474b757974edc5a91d16ba9b
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_freebsd_386
+      freebsd_386: md5:0fa1db284f7dff7bc5e82c2601f5ca44
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_freebsd_amd64
+      freebsd_amd64: md5:ebeac8576f49a74b62e2e3bfc6092110
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_freebsd_arm
+      freebsd_arm: md5:10068ffdf7d403cac059b14ab54decc0
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_386
+      linux_386: md5:5169acaefbf271dc677719ddb5efc345
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_amd64
+      linux_amd64: md5:e70051b25003a1ce2b13e3188c787c58
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_arm
+      linux_arm: md5:6751264f1f5a4df6f05de521e79fa4f6
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_arm64
+      linux_arm64: md5:6430e869b6ea760810c8e70dd4c33d2e
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_mips
+      linux_mips: md5:ca7130450b83db8fedb47aa2d330e7fb
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_mips64
+      linux_mips64: md5:83041142730251b9806083a744fec669
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_mips64le
+      linux_mips64le: md5:b1c33fc6adb0a14a26460ed3588cdd5e
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_mipsle
+      linux_mipsle: md5:9ee8b5ec7365e61de306d1078600427a
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_ppc64
+      linux_ppc64: md5:24b39ac0f36ec162bb5f3a13e347f3c2
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_ppc64le
+      linux_ppc64le: md5:5f2f9d36d1a6d8a37c85635634ed16c9
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_linux_s390x
+      linux_s390x: md5:afc3721097ac7daf32b757aa04c60f14
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_netbsd_386
+      netbsd_386: md5:42cd7e8cb9072e79e475c4892de3ac7d
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_netbsd_amd64
+      netbsd_amd64: md5:9241c410d5abb9c5d774464772d71e55
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_netbsd_arm
+      netbsd_arm: md5:2403456f1e3ac8daa2715c45d951432e
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_openbsd_386
+      openbsd_386: md5:5b2bc40250b47d86ec557b0ab9945655
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_openbsd_amd64
+      openbsd_amd64: md5:06afd60f8c09f30fe440fcc5a2949048
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_windows_386.exe
+      windows_386: md5:cfe975f3ce99b22901b2c374898a00b7
+      # https://github.com/mikefarah/yq/releases/download/v4.9.7/yq_windows_amd64.exe
+      windows_amd64: md5:cd5461b1d90aa775f8cee6f9cff75738
