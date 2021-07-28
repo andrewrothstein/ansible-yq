@@ -12,8 +12,8 @@ dl() {
     local platform="${os}_${arch}"
     local rfile="${app}_${platform}${dotexe}"
     local url=$MIRROR/v$ver/$rfile
-    printf "      # %s\n" $url
-    printf "      %s: md5:%s\n" $platform $(grep -e "^$rfile " $lchecksums | awk '{print $4}')
+    printf "    # %s\n" $url
+    printf "    %s: md5:%s\n" $platform $(grep -e "^$rfile " $lchecksums | awk '{print $4}')
 }
 
 dl_ver() {
