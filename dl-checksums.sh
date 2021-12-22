@@ -54,4 +54,4 @@ dl_ver() {
     dl $ver windows amd64 .exe
 }
 
-dl_ver ${1:-4.14.2}
+dl_ver ${1:-4.16.1}
