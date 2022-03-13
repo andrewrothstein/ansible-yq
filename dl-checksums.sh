@@ -24,13 +24,14 @@ dl_ver() {
     local lchecksums=$DIR/${app}-${ver}-checksums
     if [ ! -e $lchecksums ];
     then
-        wget -q -O $lchecksums $url
+        curl -sSLf -o $lchecksums $url
     fi
 
     printf "  # %s\n" $url
     printf "  '%s':\n" $ver
 
     dl $ver darwin amd64
+    dl $ver darwin arm64
     dl $ver freebsd 386
     dl $ver freebsd amd64
     dl $ver freebsd arm
@@ -54,4 +55,4 @@ dl_ver() {
     dl $ver windows amd64 .exe
 }
 
-dl_ver ${1:-4.16.1}
+dl_ver ${1:-4.22.1}
