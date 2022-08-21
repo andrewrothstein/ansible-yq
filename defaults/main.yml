@@ -1,6 +1,6 @@
 ---
 # defaults file for yq
-yq_ver: 4.27.1
+yq_ver: 4.27.2
 yq_mirror: https://github.com/mikefarah/yq/releases/download
 yq_install_dir: /usr/local/bin
 yq_privilege_escalate: true
