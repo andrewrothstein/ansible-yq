@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
-DIR=~/Downloads
+DIR=$(mktemp -d)
+trap 'rm -rf "$DIR"' EXIT
 APP=yq
 MIRROR=https://github.com/mikefarah/${APP}/releases/download
 
@@ -31,14 +32,8 @@ dl_ver() {
 
     local lchecksums=$DIR/${APP}-${ver}-checksums
     local lorder=$DIR/${APP}-${ver}-checksums_hashes_order
-    if [ ! -e "$lchecksums" ];
-    then
-        curl -fsSL --proto '=https' --tlsv1.2 -o "$lchecksums" "$url"
-    fi
-    if [ ! -e "$lorder" ];
-    then
-        curl -fsSL --proto '=https' --tlsv1.2 -o "$lorder" "$order_url"
-    fi
+    curl -fsSL --proto '=https' --tlsv1.2 -o "$lchecksums" "$url"
+    curl -fsSL --proto '=https' --tlsv1.2 -o "$lorder" "$order_url"
     # field 1 is the file name, hash N of the order file is field N+1
     local col
     col=$(( $(grep -n -x 'SHA-256' "$lorder" | cut -d: -f1) + 1 ))
@@ -71,6 +66,6 @@ dl_ver() {
     dl "$lchecksums" "$col" "$ver" windows amd64 .exe
 }
 
-for v in "${@:-4.54.2}"; do
+for v in "${@:-4.54.3}"; do
     dl_ver "$v"
 done
